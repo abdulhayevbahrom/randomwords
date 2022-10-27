@@ -44,19 +44,24 @@ add.addEventListener("click", (e) => {
   if (EngLocal !== null) {
     EngWords.push(...EngLocal, eng.value);
     localStorage.setItem("eng_words", JSON.stringify(EngWords));
+    eng.value === ""
   } else {
     EngWords.push(eng.value);
     localStorage.setItem("eng_words", JSON.stringify(EngWords));
+    eng.value === ""
   }
   // uzb word
   localStorage.removeItem("uzb_words");
   if (UzbLocal !== null) {
     UzbWords.push(...UzbLocal, uzb.value);
     localStorage.setItem("uzb_words", JSON.stringify(UzbWords));
+    uzb.value === ""
   } else {
     UzbWords.push(uzb.value);
     localStorage.setItem("uzb_words", JSON.stringify(UzbWords));
+    uzb.value === ""
   }
+
+  eng.value = ""
+  uzb.value = ""
 });
-console.log(EngLocal);
-console.log(UzbLocal);
