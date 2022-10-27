@@ -3,6 +3,7 @@ const uzb = document.querySelector(".uzb");
 
 if(window.innerWidth > 768){
   alert("Ushbu sayt Ekran o'lchami 768px va undan past bolgan gajjetlar uchun!  ")
+  document.body.innerHTML = "Ushbu dastur telefonlar uchun!"
 }
 
 let EngWords = [];
