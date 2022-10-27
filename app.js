@@ -1,6 +1,10 @@
 const eng = document.querySelector(".eng");
 const uzb = document.querySelector(".uzb");
 
+if(window.innerWidth > 768){
+  alert("Ushbu sayt Ekran o'lchami 768px va undan past bolgan gajjetlar uchun!  ")
+}
+
 let EngWords = [];
 let UzbWords = [];
 let EngLocal = JSON.parse(localStorage.getItem("eng_words"));
