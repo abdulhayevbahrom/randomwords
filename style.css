@@ -29,10 +29,11 @@ nav a{
     color:#fff;
     text-decoration: none;
     font-size: 5vw;
+    border-right: 2px solid #fff;
 }
 
-nav a:first-child{
-    border-right: 2px solid #fff;
+nav a:last-child{
+    border: none;
 }
 
 .active{
@@ -106,4 +107,52 @@ form button{
 
 form button:last-child{
     background-color: red;
+}
+
+/* =========== table ========= */
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+    border: 1px solid #ddd;
+    max-height: 80vh;
+}
+
+table thead {
+    background-color: rgb(111, 162, 214);
+    height: 27px;
+    text-align: left;    
+    color: #fff;
+}
+
+table thead th{
+    border: 1px solid #666;
+    padding: 4px 5px;
+}
+
+table thead tr th:first-child{
+    width: 25px;
+}
+
+table tbody{
+    background-color: yellow;
+    max-height: 70vh;
+    margin-top: 10px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(219, 234, 245);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(191, 192, 245);
+}
+
+tbody tr td{
+    border: 1px solid #666;
+    padding:4px 5px;
+}
+
+tbody tr{
+    max-height: 22px;
 }
